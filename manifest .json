@@ -1,0 +1,61 @@
+{
+  "name": "Peak Motion",
+  "short_name": "Peak Motion",
+  "description": "Peak Motion: three games played with your own body. Cycling (Peak Ride), Balance Lab and Skiing (Peak Rush). Created and developed by Tayyar Hussain.",
+  "id": "./",
+  "start_url": "./",
+  "scope": "./",
+  "display": "fullscreen",
+  "orientation": "landscape",
+  "background_color": "#0f2242",
+  "theme_color": "#0f2242",
+  "categories": [
+    "games",
+    "sports",
+    "health"
+  ],
+  "icons": [
+    {
+      "src": "icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Lab mode",
+      "short_name": "Lab",
+      "url": "./#lab",
+      "icons": [
+        {
+          "src": "icon-192.png",
+          "sizes": "192x192"
+        }
+      ]
+    },
+    {
+      "name": "Researcher screen",
+      "short_name": "Researcher",
+      "url": "./#researcher",
+      "icons": [
+        {
+          "src": "icon-192.png",
+          "sizes": "192x192"
+        }
+      ]
+    }
+  ]
+}
