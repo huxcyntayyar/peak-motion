@@ -1,6 +1,6 @@
 Peak Motion - third-party content
 
-3D models in Balance Lab (both licensed under Creative Commons Attribution 4.0, CC BY 4.0:
+3D models (all licensed under Creative Commons Attribution 4.0, CC BY 4.0:
 https://creativecommons.org/licenses/by/4.0/)
 
 1. elder-man.glb
@@ -12,5 +12,10 @@ https://creativecommons.org/licenses/by/4.0/)
    "Female Older People" by Ob1to
    https://skfb.ly/pLprQ
    Changes: parts merged, a skeleton (bones) and skin weights added so the figure can move, textures made smaller.
+
+3. rider.glb (Cycling Lab rider)
+   "Cyclist - racing position - free 3d printable" by Andy Woodhead
+   https://sketchfab.com/3d-models/cyclist-racing-position-free-3d-printable-f97acacd76be484dbf0243d82f6a1c44
+   Changes: only the rider kept (bike and base removed), made lighter (fewer triangles), a skeleton (bones) and skin weights added so the legs pedal.
 
 These models are not owned by Tayyar Hussain; everything else in Peak Motion is (see LICENSE).
