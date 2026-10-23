@@ -1,9 +1,16 @@
 Peak Motion - third-party content
 
-3D model in Balance Lab (elder-man.glb):
-  "Ye Old Capt'n" by ustoopia
-  https://sketchfab.com/3d-models/ye-old-captn-3919c2e22dd44842971f602eef68ab44
-  Licensed under Creative Commons Attribution 4.0 (CC BY 4.0): https://creativecommons.org/licenses/by/4.0/
-  Changes: captain's cap removed, trousers recoloured, textures made smaller, one of two copies removed.
+3D models in Balance Lab (both licensed under Creative Commons Attribution 4.0, CC BY 4.0:
+https://creativecommons.org/licenses/by/4.0/)
 
-This model is not owned by Tayyar Hussain; everything else in Peak Motion is (see LICENSE).
+1. elder-man.glb
+   "Ye Old Capt'n" by ustoopia
+   https://sketchfab.com/3d-models/ye-old-captn-3919c2e22dd44842971f602eef68ab44
+   Changes: captain's cap removed, trousers recoloured, textures made smaller, one of two copies removed.
+
+2. elder-woman.glb
+   "Female Older People" by Ob1to
+   https://skfb.ly/pLprQ
+   Changes: parts merged, a skeleton (bones) and skin weights added so the figure can move, textures made smaller.
+
+These models are not owned by Tayyar Hussain; everything else in Peak Motion is (see LICENSE).
