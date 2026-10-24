@@ -1,6 +1,6 @@
 // Peak Ride service worker. Bump VERSION whenever you upload a new index.html,
 // otherwise phones keep the old cached copy.
-const VERSION = 'peakride-v53';
+const VERSION = 'peakride-v54';
 // Three games share this website: Cycling (this folder), Balance Lab (balance/) and Skiing (ski/,
 // which has its own service worker). Each worker only ever deletes its own old caches.
 const CORE = ['./', './index.html', './manifest.json', './icon-180.png', './icon-192.png', './icon-512.png', './icon-maskable-512.png'];
