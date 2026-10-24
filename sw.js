@@ -1,6 +1,6 @@
 // Peak Ride service worker. Bump VERSION whenever you upload a new index.html,
 // otherwise phones keep the old cached copy.
-const VERSION = 'peakride-v54';
+const VERSION = 'peakride-v55';
 // Three games share this website: Cycling (this folder), Balance Lab (balance/) and Skiing (ski/,
 // which has its own service worker). Each worker only ever deletes its own old caches.
 const CORE = ['./', './index.html', './manifest.json', './icon-180.png', './icon-192.png', './icon-512.png', './icon-maskable-512.png'];
@@ -39,6 +39,15 @@ self.addEventListener('fetch', e => {
   }
   if (url.hostname === 'fonts.googleapis.com' || url.hostname === 'fonts.gstatic.com') {
     e.respondWith(caches.open(VERSION).then(c => c.match(req).then(hit => { const net = fetch(req).then(res => { if (res.ok || res.type === 'opaque') c.put(req, res.clone()); return res; }).catch(() => hit); return hit || net; })));
+    return;
+  }
+  // the 3D people (.glb): always ask the website first, so an updated rider shows up at once; the
+  // stored copy (also the one from "Offline") is only used when there is no connection
+  if (url.origin === self.location.origin && url.pathname.endsWith('.glb')) {
+    e.respondWith(fetch(req, { cache: 'no-cache' }).then(res => {
+      if (res.ok) { const a = res.clone(), b = res.clone(); caches.open(VERSION).then(c => c.put(req, a)); caches.open('peakride-assets').then(c => c.put(req, b)); }
+      return res;
+    }).catch(() => caches.match(req).then(hit => hit || Response.error())));
     return;
   }
   if (url.origin === self.location.origin) {
