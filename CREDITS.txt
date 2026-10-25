@@ -19,3 +19,9 @@ https://creativecommons.org/licenses/by/4.0/)
    Changes: only the rider kept (bike and base removed), made lighter (fewer triangles), a skeleton (bones) and skin weights added so the legs pedal.
 
 These models are not owned by Tayyar Hussain; everything else in Peak Motion is (see LICENSE).
+
+Included game
+
+4. Star Catch Challenge (米字接球挑戰)
+   Game, idea and code by Dr. Shogan Wu. Included in Peak Motion with his permission;
+   it remains his work. Peak Motion only adds a "Games" button to return to the menu.

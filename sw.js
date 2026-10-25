@@ -1,6 +1,6 @@
 // Peak Ride service worker. Bump VERSION whenever you upload a new index.html,
 // otherwise phones keep the old cached copy.
-const VERSION = 'peakride-v56';
+const VERSION = 'peakride-v58';
 // Three games share this website: Cycling (this folder), Balance Lab (balance/) and Skiing (ski/,
 // which has its own service worker). Each worker only ever deletes its own old caches.
 const CORE = ['./', './index.html', './manifest.json', './icon-180.png', './icon-192.png', './icon-512.png', './icon-maskable-512.png'];
@@ -33,7 +33,7 @@ self.addEventListener('fetch', e => {
     return;
   }
   // camera body tracking (MediaPipe library + pose model): download once, then keep
-  if ((url.hostname === 'cdn.jsdelivr.net' && (url.pathname.includes('@mediapipe/') || url.pathname.includes('/three@'))) || (url.hostname === 'storage.googleapis.com' && url.pathname.includes('mediapipe-models'))) {
+  if ((url.hostname === 'cdn.jsdelivr.net' && (url.pathname.includes('@mediapipe/') || url.pathname.includes('/three@'))) || (url.hostname === 'storage.googleapis.com' && url.pathname.includes('mediapipe-models')) || (url.hostname === 'cdnjs.cloudflare.com' && /\/(html2canvas|jspdf)\//.test(url.pathname))) {
     e.respondWith(caches.open('peakride-mediapipe').then(c => c.match(req).then(hit => hit || fetch(req).then(res => { if (res.ok) c.put(req, res.clone()); return res; }))));
     return;
   }
