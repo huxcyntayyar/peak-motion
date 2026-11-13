@@ -1,7 +1,7 @@
 // Peak Motion service worker.
 // RULE: bump VERSION below every time you upload a new index.html, and upload sw.js together with it
-// (the file must be named exactly "sw.js"; a copy called sw-v99.js is never used by the browser).
-const VERSION = 'peakride-v99';
+// (the file must be named exactly "sw.js"; a copy called sw-v100.js is never used by the browser).
+const VERSION = 'peakride-v100';
 // Everything the app needs offline. Stored one by one, so one failed download (weak wifi) never
 // stops the whole worker from installing.
 const CORE = ['./index.html', './manifest.json', './icon-180.png', './icon-192.png', './icon-512.png', './icon-maskable-512.png'];
